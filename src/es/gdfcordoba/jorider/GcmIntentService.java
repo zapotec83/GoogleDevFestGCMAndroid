@@ -70,9 +70,9 @@ public class GcmIntentService extends IntentService {
 
     	String mensaje = extras.getString("message");
     	
-    	Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);
+    	Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.icon);
     	NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this)
-        .setSmallIcon(R.drawable.ic_launcher)
+        .setSmallIcon(R.drawable.icon)
         .setLargeIcon(bm)
         .setContentTitle(getString(R.string.app_name))
         .setContentText(mensaje);
